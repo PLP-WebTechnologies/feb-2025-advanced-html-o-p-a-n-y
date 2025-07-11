@@ -1,0 +1,156 @@
+<!Doctype html>
+    <html>
+        <head>
+            <title>HTML Lists,Tables & Forms</title>
+        </head>
+        <body>
+            <h1>HTML Lists</h1>
+            <h3>Ordered Lists</h3>
+            <ol type="i" start="1">
+                <li>Software Engineering</li>
+                <li>Web Development</li>
+                <li>Python</li>
+                <li>Database</li>
+                <li>Startup Building</li>
+            </ol>
+        
+            <h1>HTML IMAGES</h1>
+            <img src="https://images.pexels.com/photos/21323/pexels-photo.jpg" width="350" height="550" alt="A picture of a flower">
+            <h1>Html Tables</h1>
+            <table border="1">
+                <caption>Add a table of 5 contacts with; name, address, mobile and emails</caption>
+                <thead>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Derricks</td>
+                    <td>40100,Nairobi</td>
+                    <td>0795154903</td>
+                    <td>derricks@plp.org</td>
+                </tr>
+                <tr>
+                    <td>Mathews</td>
+                    <td>00100,Nairobi</td>
+                    <td>0110293012</td>
+                    <td>mathews@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Abdul</td>
+                    <td>112,Eastleigh</td>
+                    <td>0704783645</td>
+                    <td>abdulhanti@yahoo.com</td>
+                </tr>
+                <tr>
+                    <td>Sarah</td>
+                    <td>8020,Kimbo</td>
+                    <td>0712345678</td>
+                    <td>sarahnduta@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Faith</td>
+                    <td>2025,Kitui</td>
+                    <td>0111239568</td>
+                    <td>faith25@gmail.com</td>
+                </tr>
+            </tbody>
+            </table>
+    <h2>Registration Form</h2>
+
+    <form action="" method="">
+
+        <div>
+            <label for="name">Full Name:</label><br>
+            <input
+                type="text"
+                id="name"
+                name="userName"
+                placeholder="Enter your full name"
+                required
+                
+            ><br><br>
+            </div>
+
+        <div>
+            <label for="email">Email:</label><br>
+            <input
+                type="email"
+                id="email"
+                name="userEmail"
+                placeholder="e.g., your.email@example.com"
+                required
+            ><br><br>
+            </div>
+
+        <div>
+            <label for="password">Password:</label><br>
+            <input
+                type="password"
+                id="password"
+                name="userPassword"
+                placeholder="Enter your password (min 8 characters)"
+                required
+                minlength="8"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            ><br><br>
+            </div>
+
+        <div>
+            <label for="dob">Date of Birth:</label><br>
+            <input
+                type="date"
+                id="dob"
+                name="dateOfBirth"
+                required
+                min="1980-01-01"
+                max="2007-12-31" ><br><br>
+            </div>
+
+        <div>
+            <label for="country">Country:</label><br>
+            <select id="country" name="userCountry" required>
+                <option value="">-- Please select your country --</option> 
+                <option value="ken">Kenya</option>
+                <option value="ug">Uganda</option>
+                <option value="nig">Nigeria</option>
+                <option value="tz">Tanzania</option>
+                <option value="SA">South Africa</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            </div>
+
+        <div>
+            <label>Gender:</label><br>
+            <input type="radio" id="genderMale" name="userGender" value="male" required>
+            <label for="genderMale">Male</label><br>
+            <input type="radio" id="genderFemale" name="userGender" value="female">
+            <label for="genderFemale">Female</label><br>
+          
+            </div>
+
+        <div>
+            <label>Interests (select all that apply):</label><br>
+            <input type="checkbox" id="interestReading" name="interests" value="reading">
+            <label for="interestReading">Reading</label><br>
+            <input type="checkbox" id="interestSports" name="interests" value="sports">
+            <label for="interestSports">Sports</label><br>
+            <input type="checkbox" id="interestGaming" name="interests" value="gaming">
+            <label for="interestGaming">Gaming</label><br>
+            <input type="checkbox" id="interestCoding" name="interests" value="coding">
+            <label for="interestCoding">Coding</label><br><br>
+            </div>
+
+        <div>
+            <input type="checkbox" id="terms" name="acceptTerms" value="true" required>
+            <label for="terms">I agree to the <a href="#" target="_blank">Terms and Conditions</a></label><br><br>
+            </div>
+
+        <button type="submit">Register</button>
+
+    </form>
+        </body>
+    </html>
